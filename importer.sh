@@ -3,7 +3,7 @@
 
 
 
-STR=$(find $1 -maxdepth 1 -regex '\S+.fasta' | head -n $SLURM_ARRAY_TASK_ID | tail -n 1)
+STR=$(find $1 -maxdepth 1 \( -name '*.fasta' -or -name "*.fa" \) | head -n $SLURM_ARRAY_TASK_ID | tail -n 1)
 
 
 #/home/sih13/tool/blast/blastp -db /home/sih13/database/md5nr/md5nr_no_hyphen -query $STR -num_threads 1 -max_target_seqs 10 -evalue 1e-10 -outfmt 6
