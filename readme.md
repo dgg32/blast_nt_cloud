@@ -7,5 +7,6 @@
 ###word cloud, top folder of the projects, not bins
 
 
-find [metagenome_folder] \( -name "*_maxbin" -o -name "*_metabat" -o -name "*_concoct" -o -name "*_das" \)  -type d  -printf "\n\n%f\n" -exec python blast_wordcloud.py {} \;
-python blast_wordcloud.py [fasta_folder] > [output.tsv]
+./folder.sh [metagenome_folder]
+
+python blast_wordcloud.py [metagenome_folder] > [output.tsv]
