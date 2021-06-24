@@ -1,10 +1,10 @@
-### blast nt
+### blast nt for each single binning tool
 ```
 ./submit.sh [fasta_folder] [blast_db]
 ```
 
 
-### word cloud, top folder of the projects, not bins
+### word cloud, top folder of the projects, not bins. For the four binning outputs.
 
 ```
 ./folder.sh [metagenome_folder] [database]
