@@ -7,7 +7,7 @@
 ### word cloud, top folder of the projects, not bins. For the four binning outputs.
 
 ```
-./folder.sh [metagenome_folder] [database]
+./folder.sh [metagenome_folder] [blast_db]
 ```
 
 ```
